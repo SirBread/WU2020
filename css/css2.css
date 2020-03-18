@@ -49,6 +49,25 @@
     grid-column: 2/4;
     grid-row: 3;
 }
+#containbutton{
+    margin-bottom: 42%;
+    grid-column: 2;
+    grid-row: 4;
+    background-color:#231f20;
+    text-align: center;
+    border-radius: 10px;
+}
+#button{
+    color: #e8e4d2;
+
+}
+#fastway{
+    width: 100%;
+    height: 100%;
+    color: none;
+    cursor: pointer;
+    text-decoration: none;
+}
 #proimg{
     grid-column: 5/8;
     grid-row: 1/6;
@@ -147,20 +166,20 @@ div{
 */
 #Pro{
     position: absolute;
-    top: 2vh;
+    top: 1vw;
     font-size: 2em;
     margin-left: 0.5%;
 }
 #Find{
     position: absolute;
-    top: 2vh;
+    top: 1vw;
     font-size: 2em;
     margin-left: 0.5%;
 
 }
 #Bio{
     position: absolute;
-    top: 2vh;
+    top: 1vw;
     font-size: 2em;
     margin-left: 0.5%;
 
@@ -186,14 +205,34 @@ div{
 
  /* * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/ */
 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 407px) {
+    nav{
+    font-size:13px;
+    }
+}
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
-and (max-width : 768px) {
+and (max-device-width : 768px)
+and (min-device-width : 407px) {
+
+#containbutton{
+    grid-row: 2;
+    grid-column: 6/8;
+    margin-top: 20vw;
+    margin-bottom: 0%;
+    margin-right: 1vw;
+    border-radius: 5px;
+}
+#button{
+    margin-bottom: 20%;
+}
 nav{
     width: 100%;
-    height: 7vh;
-    font-size: 16px;
+    height: 13vw;
+    font-size: 3.9vw;
 }
 #a1{
     width: 27vw;
@@ -259,6 +298,26 @@ nav{
     padding-left: 0px;
     margin-top: 5vh;
 }
+#Pro{
+    position: absolute;
+    top: 2vw;
+    font-size: 2em;
+    margin-left: 0.5%;
+}
+#Find{
+    position: absolute;
+    top: 2vw;
+    font-size: 2em;
+    margin-left: 0.5%;
+
+}
+#Bio{
+    position: absolute;
+    top: 2vw;
+    font-size: 2em;
+    margin-left: 0.5%;
+
+}
 
 }
 
@@ -266,25 +325,35 @@ nav{
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+
+    #containbutton{
+        grid-row: 2;
+        grid-column: 6/8;
+        margin-top: 15vw;
+        margin-bottom: 0%;
+        margin-right: 1vw;
+        border-radius: 5px;
+    }
+
     nav{
         width: 100%;
         height: 7vh;
-        font-size: 16px;
+        font-size: 3vw;
     }
     #Bio{
         top: 1vh;
-        font-size: 4em;
+        font-size: 2em; 
         padding-left: 3%;
     }
     #Pro{
         top: 1vh;
-        font-size: 4em;
+        font-size: 2em;
         padding-left: 3%;
     }
     #Find{
         top: 1vh;
         padding-left: 3%;
-        font-size: 4em;
+        font-size: 2em;
     }
     #a1{
         width: 27vw;
@@ -297,8 +366,12 @@ and (max-device-width : 1024px) {
     }
     #biotext{
         grid-column: 2/6;
-        grid-row: 2/4;
+        grid-row: 1/3;
         font-size: 7em;
+        margin-block-start: 6pc;
+        margin-block-end: 0pc;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
     #biobread{
         grid-column: 2/7;
@@ -332,6 +405,11 @@ and (max-device-width : 1024px) {
         margin-top: 10vh;
     }
     #right{
+        opacity: 0;
+    }
+    #left{
+        margin-left: 15vw;
+
         opacity: 1;
     }
     
@@ -339,23 +417,23 @@ and (max-device-width : 1024px) {
         grid-column: 2/7;
         grid-row: 1/3;
         margin-bottom: 0px;
-        margin-top: 12vh;
+        margin-top: 20vw;
         font-size: 6em;
         
     }
     #findbread{
         grid-column: 2/7;
-        grid-row: 2/3;
+        grid-row: 3/4;
         padding: 0px;
         padding-top: 0px;
         font-size: 3em;
     
     }
     #findimg{
-        grid-row: 3/6;
+        grid-row: 4/7;
         grid-column: 2/7;
         padding-left: 0px;
-        margin-top: 5vh;
+        margin-top: 0vh;
     }
     
 }
@@ -364,4 +442,77 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
+}
+
+
+
+
+
+
+/* ABout css */
+
+#wrapperabout{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20fr 60fr 20fr;
+    grid-template-rows: 25fr 50fr 25fr;
+    background: #231f20;
+    color: #e8e4d2;
+}
+
+#aboutprodject{
+    grid-row: 1;
+    grid-column: 2;
+    margin-top:14vw;
+    font-size: 2vw;
+}
+
+#containimg{
+    grid-row: 2;
+    grid-column: 2;
+    overflow: hidden;
+}
+
+#bild1{
+    background-image: url(https://images.unsplash.com/photo-1509462955581-9961e1eec582?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#bild2{
+    background-image: url(https://images.unsplash.com/photo-1538617990010-1df60f025ab8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#bild3{
+    background-image: url(https://images.unsplash.com/photo-1558467530-066a8c4e6832?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#leftarrow{
+    grid-row:2;
+    grid-column: 1;
+}
+
+#rightarrow{
+    grid-row:2;
+    grid-column: 3;
+}
+
+#aboutprodject{
+    font-size: 5vw;
+    margin-left: 20vw;
+}
+
+.hidden{
+    opacity: 0;
+}
+#leftarrow{
+    width: 50%;
+    height: 50%;
 }
