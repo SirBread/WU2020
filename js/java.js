@@ -43,17 +43,3 @@ function vis(){
 };
 
 
-
-/* 
-function show(){
-    var pageid = this.attributes["data-page"].value;
-    var page = document.getElementById (pageid);
-    console.log(page);
-
-    if (page.className === "hidden") {
-        page.className = "";
-    } else {
-        page.className = "hidden";
-    }
-};
- */ 
