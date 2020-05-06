@@ -1,0 +1,32 @@
+
+Schema
+vecka 18: Under lektionen vecka 18 behöver jag leta upp alla små felen på hemsidan och börja jobba med att lösa dom
+vecka 21: Jobba vidare med att fixa problem
+vecka 19: Fortsätta med att lösa scaling problemen, om de är klart kan jag börja validera koden och testa den på olika webbsidor och browsers
+vecka 20: Dubbelkolla så att allting scalar bra och kolla om allt
+
+
+Documentation
+Jag har ändrat om index hemsidans scaling från att vara 20vh till 16vw,20vw och 30vw för att få en bättre scaling på hemsidan
+Project sidan är nu bättre optimerad för scaling. Problemet är att den behöver fortfarande samma ratio, men den fungerar nu för ipgone 5 upp till iphone x och båda pixels.
+
+
+
+
+    <h2>4. Testning</h2>
+    <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
+    Testad i edge där den fungerar bra förutom att scaling på en hemsida är lite fel. I firefox fungerar allt förutom pilarnas scaling på read sidan. I chrome fungerar allt.
+    <h2>5. Utvärdering</h2>
+    <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
+    Nyanserat: "hur hade det blivit om jag istället hade...?"
+    Konkreta förbättringsförslag i produkt + process. -->
+        hade problem i början med att komma på vad jag skulle göra för projekt och hade lite problem med att lära mig javascript men i slutändan så blev att bra. Jag skulle säga att projektet gick bra i helhet.
+</body>
+
+
+
+http://browsershots.org/
+Contrast checker
+validering av html och css
+testa med liveserver på mobil
+ 

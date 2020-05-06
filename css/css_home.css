@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -38,65 +36,15 @@ body{
     height: 100%;
     animation: color 10s infinite;
     -webkit-animation: color 10s infinite;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns:(33fr)[3];
     grid-template-columns:repeat(3,33fr);
-    -ms-grid-rows: 17fr 66fr 17fr;
     grid-template-rows: 17fr 66fr 17fr;
 }
-
-#wrapper > *:nth-child(1){
-	-ms-grid-row: 1;
-	-ms-grid-column: 1;
-}
-
-#wrapper > *:nth-child(2){
-	-ms-grid-row: 1;
-	-ms-grid-column: 2;
-}
-
-#wrapper > *:nth-child(3){
-	-ms-grid-row: 1;
-	-ms-grid-column: 3;
-}
-
-#wrapper > *:nth-child(4){
-	-ms-grid-row: 2;
-	-ms-grid-column: 1;
-}
-
-#wrapper > *:nth-child(5){
-	-ms-grid-row: 2;
-	-ms-grid-column: 2;
-}
-
-#wrapper > *:nth-child(6){
-	-ms-grid-row: 2;
-	-ms-grid-column: 3;
-}
-
-#wrapper > *:nth-child(7){
-	-ms-grid-row: 3;
-	-ms-grid-column: 1;
-}
-
-#wrapper > *:nth-child(8){
-	-ms-grid-row: 3;
-	-ms-grid-column: 2;
-}
-
-#wrapper > *:nth-child(9){
-	-ms-grid-row: 3;
-	-ms-grid-column: 3;
-}
 #contain{
-    -ms-grid-row: 2;
     grid-row: 2;
-    -ms-grid-column: 2;
     grid-column: 2;
-    padding:15%;
-    margin-top:15%;
+    padding:0px;
+    margin-top:16vw;
     text-align: center;
     color: black;
 }
@@ -104,9 +52,7 @@ h3 > a {
     position: relative;
     color:#000;
     text-decoration: none;
-    -webkit-transform: translateY(-350%);
-        -ms-transform: translateY(-350%);
-            transform: translateY(-350%)
+    transform: translateY(-350%)
   }
   
   h3 > a:hover {
@@ -122,51 +68,21 @@ h3 > a {
     background-color: rgb(0, 0, 0);
     visibility: hidden;
     -webkit-transform: scaleX(0) translateY(-350%); /*translateY flytter underline upp*/
-    -ms-transform: scaleX(0) translateY(-350%);
-        transform: scaleX(0) translateY(-350%);
+    transform: scaleX(0) translateY(-350%);
     -webkit-transition: all 0.23s ease-in-out 0s;
-    -webkit-transition: -webkit-transform 0.25s ease-in-out 1ms;
-    transition: -webkit-transform 0.25s ease-in-out 1ms;
-    -o-transition: transform 0.25s ease-in-out 1ms;
     transition: transform 0.25s ease-in-out 1ms;
-    transition: transform 0.25s ease-in-out 1ms, -webkit-transform 0.25s ease-in-out 1ms;
   }
   h3 > a:hover:before {
     visibility: visible;  
     -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1) translateY(-350%);
-        transform: scaleX(1) translateY(-350%);
+    transform: scaleX(1) translateY(-350%);
   }
   h3 < a:hover{
       opacity: 50%;
   }
-  ::-moz-selection {
-
-  }
   ::selection {
 
   }
-
-@-webkit-keyframes color{
-    0% {
-        background: #F7E7D1;
-    }
-    20% {
-        background: #D3B373;
-    }
-    40% {
-        background: #C19062;
-    }
-    60% {
-        background: #EA6E5C;
-    }
-    80% {
-        background: #BBC6DF;
-    }
-    100% {
-        background: #F7E7D1;
-    }
-}
 
 @keyframes color{
     0% {
@@ -188,26 +104,6 @@ h3 > a {
         background: #F7E7D1;
     }
 }
-@-webkit-keyframes bgcolor{
-    0% {
-        background-color: #F7E7D1;
-    }
-    20% {
-        background-color: #D3B373;
-    }
-    40% {
-        background-color: #C19062;
-    }
-    60% {
-        background-color: #EA6E5C;
-    }
-    80% {
-        background-color: #BBC6DF;
-    }
-    100% {
-        background-color: #F7E7D1;
-    }
-}
 @keyframes bgcolor{
     0% {
         background-color: #F7E7D1;
@@ -226,26 +122,6 @@ h3 > a {
     }
     100% {
         background-color: #F7E7D1;
-    }
-}
-@-webkit-keyframes recolor{
-    0% {
-        color: #F7E7D1;
-    }
-    20% {
-        color: #BBC6DF;
-    }
-    40% {
-        color: #EA6E5C;
-    }
-    60% {
-        color: #C19062;
-    }
-    80% {
-        color: #d3d3d3;
-    }
-    100% {
-        color: #F7E7D1;
     }
 }
 @keyframes recolor{
@@ -272,19 +148,19 @@ h3 > a {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 480px) {
+and (max-device-width : 768px) {
     #contain{
         padding:0%;
-        margin-top:23vh;
+        margin-top:30vw;
     }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px) {
+and (max-device-width : 1224px) {
     #contain{
         padding:0%;
-        margin-top:23vh;
+        margin-top:20vw;
     }
 }
 /* Desktops and laptops ----------- */
@@ -292,6 +168,6 @@ and (max-device-width : 1024px) {
 and (min-width : 1224px) {
     #contain{
         padding:0%;
-        margin-top:23vh;
+        margin-top:16vw;
     }
 }
