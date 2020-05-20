@@ -1,9 +1,9 @@
 /* About */
 var leftarrow = document.getElementById("leftarrow2")
 var rightarrow = document.getElementById("rightarrow2")
-    var firstimg = document.getElementById("bild1")
-    var secimg = document.getElementById("bild2")
-    var thirdimg = document.getElementById("bild3")
+var firstimg = document.getElementById("bild1")
+var secimg = document.getElementById("bild2")
+var thirdimg = document.getElementById("bild3")
 
 leftarrow.addEventListener("click", minusSlides)
 rightarrow.addEventListener("click", plusSlides)

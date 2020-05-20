@@ -3,7 +3,7 @@
     position: absolute;
     display:grid;
     grid-template-columns: repeat(7,13fr);
-    grid-template-rows: repeat(10, 9.25vh);
+    grid-template-rows: repeat(10, 8.7vh);
     transition: all ease-in-out 900ms;
     -moz-transition: all ease-in-out 900ms;
     overflow: hidden;
@@ -14,8 +14,8 @@
     grid-column: 2/4;
     grid-row: 2;
     word-wrap: break-word;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     margin-top:3vw
 }
 #biobread{
@@ -31,7 +31,7 @@
     position: absolute;
     display:grid;
     grid-template-columns: repeat(7,13fr);
-    grid-template-rows: repeat(10, 9.25vh);
+    grid-template-rows: repeat(10, 8.7vh);
     transition: all ease-in-out 900ms;
     -moz-transition: all ease-in-out 900ms;
 
@@ -74,7 +74,6 @@
 #fastway{
     width: 100%;
     height: 100%;
-    color: none;
     cursor: pointer;
     text-decoration: none;
 }
@@ -380,7 +379,6 @@ div{
 @media only screen 
 and (max-device-width : 767px)
 and (min-device-width : 320px) {
-
     
     #containbutton{
         grid-row: 3/4;
@@ -471,20 +469,20 @@ and (min-device-width : 320px) {
     #Pro{
         position: absolute;
         top: 2vw;
-        font-size: 7.5vw;
+        font-size: 6.6vw;
         margin-left: 2.5vw;
     }
     #Find{
         position: absolute;
         top: 2vw;
-        font-size: 7.5vw;
+        font-size: 6.6vw;
         margin-left: 2.5vw;
         
     }
     #Bio{
         position: absolute;
         top: 2vw;
-        font-size: 7.5vw;
+        font-size: 6.6vw;
         margin-left: 2.5vw;
     }
     
@@ -532,6 +530,18 @@ and (min-device-width : 320px) {
     #leftarrow{
         grid-row:5;
     }
+
+
+    #biobread{
+        grid-column: 3/8;
+    }
+    #proheader{
+        grid-column: 2/8;
+    }
+    #findheader{
+        grid-column: 2/8;
+    }
+    
     
 }
 @media only screen 
@@ -558,6 +568,7 @@ and (max-width : 393px) {
         font-size: 0.5em;
         padding: 4.75vw;
     }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -670,36 +681,30 @@ and (max-device-width : 1024px) {
         padding-left: 0px;
         margin-top: 0vh;
     }
-    #wrapperabout{
-    
+    #button2{
+    font-size: 4vw;
+    margin-top: 2vw;    
     }
-        #containbuttonabout{
             
-        }
-        #button2{
-            font-size: 4vw;
-            margin-top: 2vw;    
-        }
-            
-        #aboutprodject{
-            font-size: 7vw;
-            grid-row:2;
-        }
-        #leftarrow{
-            grid-row
-        }
-        #leftarrow2 {
-           grid-row: 3;
-           grid-column: 2/4;
-           width: 33%;
-           height: 60%;
-        }
-        #rightarrow2 {
-            grid-row: 3;
-            grid-column: 1/3;
-            width: 33%;
-            height: 60%;
-        }
+    #aboutprodject{
+        font-size: 7vw;
+        grid-row:2;
+    }
+    #leftarrow{
+        grid-row
+    }
+    #leftarrow2 {
+       grid-row: 3;
+       grid-column: 2/4;
+       width: 33%;
+       height: 60%;
+    }
+    #rightarrow2 {
+        grid-row: 3;
+        grid-column: 1/3;
+        width: 33%;
+        height: 60%;
+    }
 
 }
 
@@ -708,8 +713,3 @@ and (max-device-width : 1024px) {
 and (min-width : 1224px) {
 /* Styles */
 }
-
-
-
-
-
